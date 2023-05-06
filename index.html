@@ -41,6 +41,16 @@
             <li><a href="" class="studio-navi link">Contacts</a></li>
           </ul>
         </nav>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/icon.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <address class="feedback">
           <ul class="list feedback-nav">
             <li>
@@ -60,7 +70,7 @@
     <main>
       <!--section 1-->
       <section class="hero-section overlay">
-        <div class="container box">
+        <div class="container-section box">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button" data-modal-open>
             Order Service
@@ -70,7 +80,7 @@
 
       <!--section 2-->
       <section class="our-advantages">
-        <div class="container box">
+        <div class="container-section box">
           <h2 class="header-zwai visually-hidden">Our advantages</h2>
           <ul class="list advantages-item">
             <li class="text advantages">
@@ -127,25 +137,56 @@
 
       <!--section 3-->
       <section class="we-doing">
-        <div class="container box">
+        <div class="container-section box">
           <h2 class="header-zwai">What are we doing</h2>
           <ul class="list wedoing-item">
             <li class="wedoing-image">
-              <img src="./images/studio/comp.jpg" alt="Computer" width="360" />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/WhatAreWeDoing/comp1x.jpg 1x,
+                    ./images/WhatAreWeDoing/comp2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/WhatAreWeDoing/comp1x.jpg"
+                  alt="Computer"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="wedoing-image">
-              <img
-                src="./images/studio/telefon.jpg"
-                alt="Telefon"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/WhatAreWeDoing/phone1x.jpg 1x,
+                    ./images/WhatAreWeDoing/phone2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/WhatAreWeDoing/phone1x.jpg"
+                  alt="Telefon"
+                  width="360"
+                />
+              </picture>
             </li>
             <li class="wedoing-image">
-              <img
-                src=".//images/studio/telefonlaptop.jpg"
-                alt="Telefon-laptop"
-                width="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/WhatAreWeDoing/laptop1x.jpg 1x,
+                    ./images/WhatAreWeDoing/laptop2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/WhatAreWeDoing/laptop1x.jpg"
+                  alt="Telefon-laptop"
+                  width="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -153,15 +194,26 @@
 
       <!--section 4 Our Team-->
       <section class="section-vier">
-        <div class="container box">
+        <div class="container-section box">
           <h2 class="header-zwai">Our Team</h2>
           <ul class="list ourteam-item">
             <li class="team-item ourteam-image">
-              <img
-                src="./images/studio/markguerero.jpg"
-                alt="Mark Guerrero"
-                width="264"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/OurTeam/imgmg1x.jpg 1x,
+                    ./images/OurTeam/imgmg2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/OurTeam/imgmg1x.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                />
+              </picture>
               <div class="work-position">
                 <h3 class="header-drai">Mark Guerrero</h3>
                 <p class="main-text">Product Designer</p>
@@ -198,11 +250,22 @@
               </div>
             </li>
             <li class="team-item ourteam-image">
-              <img
-                src="./images/studio/tomford.jpg"
-                alt="Tom Ford"
-                width="264"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/OurTeam/imgtf1x.jpg 1x,
+                    ./images/OurTeam/imgtf2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/OurTeam/imgtf1x.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                />
+              </picture>
               <div class="work-position">
                 <h3 class="header-drai">Tom Ford</h3>
                 <p class="main-text">Frontend Developer</p>
@@ -239,11 +302,23 @@
               </div>
             </li>
             <li class="team-item ourteam-image">
-              <img
-                src="./images/studio/camilagarcia.jpg"
-                alt="Camila Garcia"
-                width="264"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/OurTeam/imgcg1x.jpg 1x,
+                    ./images/OurTeam/imgcg2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./images/OurTeam/imgcg1x.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                />
+              </picture>
               <div class="work-position">
                 <h3 class="header-drai">Camila Garcia</h3>
                 <p class="main-text">Marketing</p>
@@ -280,11 +355,22 @@
               </div>
             </li>
             <li class="team-item ourteam-image">
-              <img
-                src="./images/studio/danielwilson.jpg"
-                alt="Daniel Wilson"
-                width="264"
-              />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1158px)"
+                  srcset="
+                    ./images/OurTeam/imgdw1x.jpg 1x,
+                    ./images/OurTeam/imgdw2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/OurTeam/imgdw1x.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                />
+              </picture>
               <div class="work-position">
                 <h3 class="header-drai">Daniel Wilson</h3>
                 <p class="main-text">UI Designer</p>
@@ -330,7 +416,7 @@
       <!-- Section-5 -->
 
       <section class="company">
-        <div class="container box">
+        <div class="container-section box">
           <h2 class="header-zwai section-funf">Customers</h2>
           <ul class="compani-list list">
             <li class="company-list-item">
@@ -379,10 +465,13 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
     <footer class="footer-item box">
-      <div class="container footer-zwaipart box">
+      <div class="container-section footer-zwaipart box">
         <div class="footer-part-main">
-          <a href="./index.html" class="main-logo link"
+          <a href="./index.html" class="main-logo footer-main-logo link"
             >Web<span class="footer-part link">Studio</span>
           </a>
           <p class="footer-inform">
@@ -526,6 +615,81 @@
       </div>
     </div>
 
+    <!-- Modal-mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-btn-icon-mobile" width="8" height="8">
+          <use href="./images/icon.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="./index.html" class="mobile-menu-link link current-page"
+            >Studio</a
+          >
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+        </li>
+        <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li>
+          <a href="tel:+110001111111" class="mobile-menu-tel link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-menu-mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-socialmedia-list list">
+        <li class="socialmedia-item">
+          <a href="" class="socialmedia-link">
+            <svg class="socialmedia-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socialmedia-item">
+          <a href="" class="socialmedia-link">
+            <svg class="socialmedia-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socialmedia-item">
+          <a href="" class="socialmedia-link">
+            <svg class="socialmedia-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socialmedia-item">
+          <a href="" class="socialmedia-link">
+            <svg class="socialmedia-icon" width="24" height="24">
+              <use href="./images/icon.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Skript-window-Live Your Contats -->
     <script src="./js/modal.js"></script>
+
+    <!-- Script-mobile-menu -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
