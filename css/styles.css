@@ -696,15 +696,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   transition: color var(--transition-dur-and-func);
 
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
   color: var(--subtle-text-color);
-  width: 190px;
-  /* width: 100%; */
+  /* width: 190px; */
+  width: 100%;
   height: 88px;
+}
+
+.company-list-item {
+  display: flex;
+  width: calc((100%-16px) / 3);
 }
 
 .company-list-link:hover,
@@ -714,8 +718,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .company-list-link {
-    width: 168px;
+  .company-list-item {
+    display: flex;
+    width: calc((100% - 48px) / 4);
   }
 
   .compani-list {
@@ -989,7 +994,7 @@ img {
 .modal-footer-input {
   border: none;
   padding-left: 16px;
-  width: 320px;
+  width: 300px;
   height: 40px;
   background-color: var(--dark-color);
   box-sizing: border-box;
