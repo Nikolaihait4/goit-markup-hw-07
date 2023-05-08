@@ -986,6 +986,12 @@ img {
   justify-content: center;
 }
 
+@media screen and (max-width: 428px) {
+  .button-item {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+}
 .button-portfolio {
   padding: 12px 24px;
   border: 1px solid var(--accent-color);
