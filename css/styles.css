@@ -240,7 +240,7 @@ img {
     color: var(--pressed-state-color);
   }
 
-  .studio-navi.current-page::after{
+  .studio-navi.current-page::after {
     background: var(--pressed-state-color);
   }
 
@@ -299,7 +299,7 @@ img {
     margin-bottom: 0;
   }
 
-  .feedback-telefon{
+  .feedback-telefon {
     font-size: 16px;
   }
 }
@@ -686,13 +686,11 @@ img {
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  
 }
 
 .company-list-icon {
   fill: currentColor;
 }
-
 
 .company-list-link {
   display: flex;
@@ -762,7 +760,6 @@ img {
   text-align: center;
 }
 
-
 .footer-part {
   font-size: 18px;
   line-height: 1.17;
@@ -775,7 +772,7 @@ img {
   text-align: start;
   margin: 0;
   margin-top: 16px;
-  
+
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -804,8 +801,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--body-background-color);
 }
-
-
 
 .socialmedia-link {
   display: flex;
@@ -1065,6 +1060,11 @@ img {
 /* Main */
 
 /* section-filters */
+.container-section.portfolio-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .filters {
   padding-right: 0;
   padding-left: 0;
@@ -1128,8 +1128,20 @@ img {
 }
 
 .filters-element {
-  width: calc((100% - 48px) / 3);
+  width: calc((100%-32px));
   transition: box-shadow var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 768px) {
+  .filters-element {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .filters-element {
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 .filters-element:hover,
@@ -1270,7 +1282,7 @@ div.portfolio-work {
   margin-bottom: 8px;
 }
 
-.modal-form-field-comment{
+.modal-form-field-comment {
   margin-bottom: 18px;
 }
 
