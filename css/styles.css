@@ -877,108 +877,10 @@ img {
   }
 }
 
-/* .footer-item {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: var(--dark-color);
-}
-
-.footer-einspart > a {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.footer-part {
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--light-color);
-}
-
-.footer-inform {
-  margin-top: 16px;
-  max-width: 264px;
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--accent-color);
-}
-
-.social-media {
-  margin-top: 0;
-  margin-bottom: 16px;
-  padding-top: 0;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--body-background-color);
-}
-
-.container.footer-zwaipart {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-part-main {
-  margin-right: 120px;
-}
-
-.socialmedia-icon {
-  fill: var(--light-color);
-}
-
-.socialmedia-list {
-  display: flex;
-  justify-content: end;
-  gap: 16px;
-}
-
-.socialmedia-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color var(--transition-dur-and-func);
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--primary-brand-color);
-}
-
-.socialmedia-link:hover,
-.socialmedia-link:focus {
-  background-color: var(--success-color);
-}
-
-.overlay-footer {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translate(0, 101%);
-  transition: transform var(--transition-dur-and-func);
-
-  padding: 40px 32px;
-  background-color: var(--primary-brand-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--light-color);
-}
-
-.filters-element-link:hover .overlay-footer,
-.filters-element-link:focus .overlay-footer {
-  transform: translate(0, 0);
-} */
-
 /* Modal section */
 
 .footer-subscribe {
+  width: 100%;
   margin-left: auto;
 }
 
@@ -994,7 +896,7 @@ img {
 .modal-footer-input {
   border: none;
   padding-left: 16px;
-  width: 300px;
+  width: 100%;
   height: 40px;
   background-color: var(--dark-color);
   box-sizing: border-box;
@@ -1058,6 +960,10 @@ img {
 
   .container-section.footer-zwaipart {
     padding-left: 108px;
+  }
+
+  .button-subscribe-telegram {
+    margin: 0;
   }
 }
 
@@ -1291,6 +1197,10 @@ div.portfolio-work {
   margin-bottom: 18px;
 }
 
+.footer-part-social {
+  margin-right: 0;
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -1448,6 +1358,11 @@ div.portfolio-work {
     display: flex;
     padding: 100px 16px;
     gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .footer-part-social {
+    margin-right: 80px;
   }
 
   .footer-part {
