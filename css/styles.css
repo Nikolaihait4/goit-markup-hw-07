@@ -864,7 +864,7 @@ img {
   }
 
   .social-media {
-    justify-content: flex-start;
+    text-align: start;
   }
 
   .footer-part-main {
