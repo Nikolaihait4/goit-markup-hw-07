@@ -1111,6 +1111,7 @@ div.portfolio-work {
 /* Modal section */
 
 .backdrop {
+  transform: translateY(0);
   position: fixed;
   z-index: 100;
   opacity: 1;
@@ -1427,7 +1428,7 @@ div.portfolio-work {
   flex-direction: column;
 
   width: 100vw;
-  height: 100vh;
+  height: 94vh;
   padding: 80px 35px 40px 40px;
   background-color: var(--body-background-color);
   z-index: 999;
@@ -1444,7 +1445,13 @@ div.portfolio-work {
   position: absolute;
   top: 16px;
   right: 16px;
-  /* color: #fff; */
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-container .menu-toggle:hover {
+  fill: var(--body-background-color);
+  background: var(--pressed-state-color);
 }
 
 .mobile-menu {
